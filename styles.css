@@ -35,6 +35,8 @@
     margin-left: 90px;
     z-index: 3;
     align-items: center;
+    animation: navani;
+    animation-duration: 250ms;
   }
   .header__nav-link {
     font-family: "DM Sans";
@@ -44,13 +46,20 @@
     Font-size: 16px;
     text-align: center;
     text-decoration: none;
-    Vertical-align: center;
+    vertical-align: center;
     color: white;
     z-index: 3;
   }
+  @keyframes navani {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    100% {
+      transform: translate(0px, -20px);
+    }
+  }
   .header__nav-link:hover, .header__nav-link:focus, .header__nav-link:active, .header__contact:hover {
     color: #D41443;
-    transform: translateY(-20px);
   }
   .header __nav-link::before,
   .header __nav-link::after {
@@ -89,7 +98,7 @@
     top: 54px;
     margin-left: 580px;
     margin-top: 1px;
-    z-index: 1;
+    z-index: 0;
   }
   .header__img-ice {
     position: relative;
@@ -265,10 +274,100 @@
     margin-bottom: 30px;
   }
   
+  .burbujas div {
+    background: rgb(238, 201, 213);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    animation: animarburbujas 4s linear infinite;
+  }
+  
+  .burbujas div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    animation-duration: 3s;
+  }
+  
+  .burbujas div:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    left: 20%;
+    animation-duration: 4s;
+  }
+  
+  .burbujas div:nth-child(3) {
+    width: 150px;
+    height: 150px;
+    left: 40%;
+    animation-duration: 3s;
+  }
+  
+  .burbujas div:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    animation-duration: 4s;
+  }
+  
+  .burbujas div:nth-child(5) {
+    width: 55px;
+    height: 55px;
+    left: 65%;
+    animation-duration: 6.5s;
+  }
+  
+  .burbujas div:nth-child(6) {
+    width: 100px;
+    height: 100px;
+    left: 85%;
+    animation-duration: 9s;
+  }
+  
+  .burbujas div:nth-child(7) {
+    width: 180px;
+    height: 180px;
+    left: 82%;
+    animation-duration: 6s;
+  }
+  
+  .burbujas div:nth-child(8) {
+    width: 55px;
+    height: 55px;
+    left: 75%;
+    animation-duration: 6.5s;
+  }
+  
+  .burbujas div:nth-child(9) {
+    width: 100px;
+    height: 100px;
+    left: 86%;
+    animation-duration: 9s;
+  }
+  
+  .burbujas div:nth-child(10) {
+    width: 180px;
+    height: 180px;
+    left: 78%;
+    animation-duration: 6s;
+  }
+  
+  @keyframes animarburbujas {
+    50% {
+      margin-left: 20px;
+      opacity: 0.5;
+    }
+    100% {
+      bottom: 100vh;
+      margin-left: 40px;
+      opacity: 0.5;
+      position: absolute;
+      z-index: 4;
+    }
+  }
   body {
     font-family: "DM Sans", sans-serif;
     font-family: "Titan One", sans-serif;
-    cursor: pointer;
   }
   
   *::before,
@@ -291,4 +390,6 @@
     margin: 0 auto;
   }
   
+  /*# sourceMappingURL=main.min.css.map */
   
+/* hasta aqui va el header  */
