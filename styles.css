@@ -1,0 +1,133 @@
+.button{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+
+    width: 176px;
+    height: 44px;
+    margin: 396px 0px 0px -408px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: #FFFFFF;
+    color: #D41443;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+  }
+
+
+
+.container{
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFF5F6;
+     
+
+}
+
+.content{
+    font-family: 'DM Sans';
+    width: 463px;
+    height: 79px;
+    line-height: 176%;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-bottom: 32px;
+    padding-top: 30px;
+
+    letter-spacing: 0.04em;
+
+    color: #000000;
+
+}
+
+.content:hover {
+    transform: scale(1.1);
+  }
+
+
+.content-one {
+    font-family: 'DM Sans';
+    width: 463px;
+    line-height: 194%;
+    font-size: 14px;
+    margin-left: 50px;
+
+    letter-spacing: 0.04em;
+
+    color: #907E82;
+}
+
+.content-one:hover {
+    transform: scale(1.1);
+  }
+
+.cluster {
+    display: flex;
+    margin-right: 20px;
+    background: url(./../images/fondo.png); 
+
+}
+
+img {
+    display: block;
+    width: 501px;
+    height: 501px;
+    left: 16px;
+    top: 1953px;
+    animation-name: spin;
+    animation-duration: 5s;
+    
+}
+
+img{
+    transition-duration: 10000ms;
+    transition-timing-function: ease-in;
+    transition-delay: 100;
+  }
+  
+  img:hover {
+    transform: rotate(360deg);
+  }
+
+
+.title{
+    font-family: 'Titan One';
+    cursor: default;
+    padding-top: 20px;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFA5BA;
+}
+
+
+
+.title:hover,
+.title-one:hover {
+  cursor:default;
+  letter-spacing: 0.5em;
+}
+
+.title-one{
+    font-family: 'Titan One';
+    cursor: default;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #D41443;
+}
